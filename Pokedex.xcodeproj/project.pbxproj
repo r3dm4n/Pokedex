@@ -15,6 +15,7 @@
 		BE37F3551EBDABA200747307 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = BE37F3541EBDABA200747307 /* pokemon.csv */; };
 		BE37F3581EBDAD0C00747307 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3571EBDAD0C00747307 /* Pokemon.swift */; };
 		BE37F35B1EBDC91900747307 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F35A1EBDC91900747307 /* PokeCell.swift */; };
+		BE882B9C1EBDDC8800567CA4 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE882B9B1EBDDC8800567CA4 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BE37F3541EBDABA200747307 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		BE37F3571EBDAD0C00747307 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		BE37F35A1EBDC91900747307 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		BE882B9B1EBDDC8800567CA4 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BE37F3461EBDA95A00747307 /* Main.storyboard */,
 				BE37F3491EBDA95A00747307 /* Assets.xcassets */,
 				BE37F3541EBDABA200747307 /* pokemon.csv */,
+				BE882B9B1EBDDC8800567CA4 /* csv.swift */,
 				BE37F34B1EBDA95A00747307 /* LaunchScreen.storyboard */,
 				BE37F34E1EBDA95A00747307 /* Info.plist */,
 			);
@@ -122,6 +125,7 @@
 					BE37F33E1EBDA95900747307 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5XZQ592FBM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -167,6 +171,7 @@
 				BE37F3451EBDA95A00747307 /* ViewController.swift in Sources */,
 				BE37F3431EBDA95A00747307 /* AppDelegate.swift in Sources */,
 				BE37F3581EBDAD0C00747307 /* Pokemon.swift in Sources */,
+				BE882B9C1EBDDC8800567CA4 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +335,7 @@
 				BE37F3531EBDA95A00747307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
