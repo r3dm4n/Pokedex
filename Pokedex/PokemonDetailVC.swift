@@ -22,12 +22,7 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
-    
-    
-    
-    
-    
-    
+
     
     var pokemon: Pokemon!
     
@@ -35,6 +30,18 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
         
         nameLbl.text = pokemon.name.capitalized
+        pokemon.downloadPokemonDetail {
+            
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        attackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
