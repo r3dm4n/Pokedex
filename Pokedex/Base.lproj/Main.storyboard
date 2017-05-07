@@ -168,15 +168,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJL-YB-ZG8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-Xl-nDB">
-                                        <rect key="frame" x="88" y="34" width="198" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-Xl-nDB">
+                                        <rect key="frame" x="149" y="18" width="76.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzt-L3-vef">
-                                        <rect key="frame" x="8" y="33" width="35" height="23"/>
+                                        <rect key="frame" x="8" y="21" width="35" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="41" id="01T-Rz-i9S"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="8c3-vc-nPR"/>
@@ -186,13 +185,18 @@
                                         <state key="normal" image="back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="CHH-yy-uQb" eventType="touchUpInside" id="NAZ-nt-17R"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Gzt-L3-vef" firstAttribute="leading" secondItem="wJL-YB-ZG8" secondAttribute="leading" constant="8" id="5Dx-7a-b6B"/>
                                     <constraint firstAttribute="height" constant="65" id="KDs-R6-jAF"/>
-                                    <constraint firstItem="Gzt-L3-vef" firstAttribute="top" secondItem="wJL-YB-ZG8" secondAttribute="top" constant="33" id="gLr-XO-MgQ"/>
+                                    <constraint firstItem="Gzt-L3-vef" firstAttribute="centerY" secondItem="wJL-YB-ZG8" secondAttribute="centerY" id="cya-S4-b3D"/>
+                                    <constraint firstItem="bbI-Xl-nDB" firstAttribute="centerX" secondItem="wJL-YB-ZG8" secondAttribute="centerX" id="xOm-cd-2rg"/>
+                                    <constraint firstItem="bbI-Xl-nDB" firstAttribute="centerY" secondItem="wJL-YB-ZG8" secondAttribute="centerY" id="zsj-My-oUZ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-RD-seb">
@@ -431,7 +435,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="GsX-98-pdW" id="Str-QA-W4A"/>
+                        <outlet property="currentEvoImg" destination="3Jb-Y5-Eyd" id="NhI-93-byd"/>
+                        <outlet property="defenseLbl" destination="rFY-zi-hu3" id="Pw2-dL-Vjs"/>
+                        <outlet property="descLbl" destination="vYS-A4-wLV" id="ndG-jF-sYS"/>
+                        <outlet property="evoLbl" destination="JiT-CU-eaK" id="M25-Cz-z1h"/>
+                        <outlet property="heightLbl" destination="6oJ-od-c3b" id="IHH-Za-7dl"/>
+                        <outlet property="mainImg" destination="9vk-T1-j4u" id="ZUs-bo-5Uw"/>
                         <outlet property="nameLbl" destination="bbI-Xl-nDB" id="wyI-ci-v2T"/>
+                        <outlet property="nextEvoImg" destination="T9k-yZ-Izd" id="bFy-eg-khR"/>
+                        <outlet property="pokedexLbl" destination="LNe-64-WkT" id="Sfm-B4-BOz"/>
+                        <outlet property="typeLbl" destination="WZS-8l-OHZ" id="jiv-7d-NZj"/>
+                        <outlet property="weightLbl" destination="7vC-7H-a1i" id="xaF-Bc-hSL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1o4-4B-TkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
